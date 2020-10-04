@@ -1,0 +1,14 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-order
+eureka:
+  client:
+    register-fetch-interval-seconds: 60
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    #registerWithEureka: false
+    #fetchRegistry: false
+    instance:
+      perfer-ip-address: true
